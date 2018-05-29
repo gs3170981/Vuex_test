@@ -18,6 +18,7 @@ const test = { // test可从其他文件中import导入
       state.count3++
     }
   },
+  // TODO 模块化引入的时候，getter是合并到同一个作用域中，不能重名
   getters: { // fuck,是getters不是getter
     count2: state => state.count2,
     count3: state => state.count3
